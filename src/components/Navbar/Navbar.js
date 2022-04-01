@@ -4,18 +4,14 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import { LogoDev } from "@mui/icons-material/";
 import "./navbar.scss";
 
-const pages = ["About", "Contact", "Get Started"];
+const pages = ["About", "Contact"];
 const settings = ["Profile", "My Raffles"];
 
 const Navbar = () => {
   const [currentAccount, setAccount] = useState(null);
   const checkWalletConnection = () => {
     const ethereum = window.ethereum;
-    if (ethereum) {
-      return true;
-    } else {
-      return false;
-    }
+    return ethereum ? true : false;
   };
   const connectWalletHandler = async () => {
     if (checkWalletConnection()) {
@@ -27,7 +23,7 @@ const Navbar = () => {
       } catch (error) {
         console.log(error);
       }
-    }else{
+    } else {
       alert("Metamask isn't installed");
     }
   };
@@ -40,8 +36,8 @@ const Navbar = () => {
         <div className="wallet-status">Wallet Connected</div>
       )}
       <Container maxWidth="xl">
-        <Toolbar>
-          <Button
+        <Toolbar disableGutters>
+          <Button className="nav-logo"
             key="logo"
             sx={{ my: 1, color: "white", fontWeight: "bold", fontSize: "22px" }}
           >
@@ -55,7 +51,7 @@ const Navbar = () => {
             }}
           >
             {pages.map((page) => (
-              <Button
+              <Button className="nav-items"
                 key={page}
                 sx={{
                   my: 1,

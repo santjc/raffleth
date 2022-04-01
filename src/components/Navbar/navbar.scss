@@ -5,11 +5,26 @@
 
     button{
         color: $whiteblue;
+        text-transform: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    button:hover{
+        color: $orange;
     }
     .wallet-status{
         text-align: center;
         font-size: 14px;
         background-color: $darkblue;
         color: $whiteblue;
+    }
+
+    .nav-logo{
+        justify-content: start;
+    }
+
+    .nav-items{
+        justify-content: end;
     }
 }
