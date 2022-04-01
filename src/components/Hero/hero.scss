@@ -1,0 +1,28 @@
+@import '../../../public/variables.scss';
+#hero{
+    padding: 40px 0;
+    background-color: $aquamarine;
+
+    h1{
+        font-size: 32px;
+        margin: 10px 0;
+        color: $themeblack;
+        font-weight: bold;
+    }
+
+    h3{
+        font-size: 26px;
+        margin: 10px 0;
+        color: $darkblue;
+    }
+
+    button{
+        background-color: $orange;
+        padding: 15px 25px;
+        text-align: center;
+        font-weight: bold;
+        color: $whiteblue;
+        margin: 25px 0 0;
+    }
+
+}

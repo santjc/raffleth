@@ -1,0 +1,9 @@
+@import '../../../public/variables.scss';
+
+#navbar {
+    background-color: $lightblue !important;
+
+    button{
+        color: $themeblack;
+    }
+}
