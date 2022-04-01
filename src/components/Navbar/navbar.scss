@@ -1,9 +1,15 @@
 @import '../../../public/variables.scss';
 
 #navbar {
-    background-color: $lightblue !important;
+    background-color: $themeblack !important;
 
     button{
-        color: $themeblack;
+        color: $whiteblue;
+    }
+    .wallet-status{
+        text-align: center;
+        font-size: 14px;
+        background-color: $darkblue;
+        color: $whiteblue;
     }
 }
