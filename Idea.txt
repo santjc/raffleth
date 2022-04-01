@@ -1,0 +1,11 @@
+Do a Raffle on solidity.
+UI:
+	Create a Raffle
+	Owner (Limit Roles)
+	Min payable Amount.
+	Max Numbers per user.
+	Timestamp/Max date.
+	Deploy
+
+Focus on security.
+
